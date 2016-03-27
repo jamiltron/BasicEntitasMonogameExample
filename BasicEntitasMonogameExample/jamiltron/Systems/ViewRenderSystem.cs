@@ -5,10 +5,9 @@ using System.Collections.Generic;
 
 namespace BasicEntitasMonogameExample {
   public class ViewRenderSystem : IExecuteSystem, ISetPool {
-    private Group group;
-    private Dictionary<string, Texture2D> content;
-    private SpriteBatch spriteBatch;
-
+    Group group;
+    Dictionary<string, Texture2D> content;
+    SpriteBatch spriteBatch;
 
     public Dictionary<string, Texture2D> Content {
       set { content = value; }

@@ -35,13 +35,12 @@ namespace BasicEntitasMonogameExample {
       base.Initialize();
     }
 
-    private Systems CreateUpdateSystems() {
-      var movementSystem = (MovementSystem) pool.CreateSystem<MovementSystem>();
+    Systems CreateUpdateSystems() {
       return new Systems().Add(pool.CreateSystem<PlayerKeyboardSystem>())
         .Add(pool.CreateSystem<MovementSystem>());
     }
 
-    private Systems CreateRenderSystems() {
+    Systems CreateRenderSystems() {
       var content = new Dictionary<string, Texture2D>();
       content["Hero"] = Content.Load<Texture2D>("Hero");
       var viewRenderSystem = (ViewRenderSystem)pool.CreateSystem<ViewRenderSystem>();
@@ -50,7 +49,7 @@ namespace BasicEntitasMonogameExample {
       return new Systems().Add(viewRenderSystem);
     }
 
-    private void CreateEntities() {
+    void CreateEntities() {
       pool.CreateEntity().AddPosition(0, 0).AddVelocity(0f, 0f).AddView("Hero").AddPlayerControlled(true);
     }
 

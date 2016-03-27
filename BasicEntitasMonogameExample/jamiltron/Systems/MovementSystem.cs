@@ -2,7 +2,7 @@
 
 namespace BasicEntitasMonogameExample {
   public class MovementSystem : IExecuteSystem, ISetPool {
-    private Group group;
+    Group group;
       
     public void Execute() {
       foreach (var e in group.GetEntities()) {
