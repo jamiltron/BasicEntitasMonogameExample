@@ -5,6 +5,8 @@ namespace BasicEntitasMonogameExample {
     public CodeTemplates() {
       new PositionComponent();
       new ViewComponent();
+      new VelocityComponent();
+      new PlayerControlledComponent();
     }
   }
 }
