@@ -14,4 +14,10 @@ Global
 		{BBBD2640-461B-45C2-B630-C85A86DF4B9E}.Release|x86.ActiveCfg = Release|x86
 		{BBBD2640-461B-45C2-B630-C85A86DF4B9E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
 EndGlobal
